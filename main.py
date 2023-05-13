@@ -10,7 +10,7 @@ texto = input()
 
 headers = ['idioma', 'texto']
 
-with open('traduccion.csv','w',newline='') as file:
+with open(f'{texto}.csv','w',newline='') as file:
     writer = csv.writer(file)
     writer.writerow( headers)
 
